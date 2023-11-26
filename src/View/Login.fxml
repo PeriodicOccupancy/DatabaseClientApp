@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.LoginController">
+   <children>
+      <Button fx:id="loginBtn" alignment="CENTER_RIGHT" layoutX="444.0" layoutY="254.0" mnemonicParsing="false" onAction="#login" text="Login" textAlignment="RIGHT" />
+      <PasswordField fx:id="passwordTxt" layoutX="300.0" layoutY="206.0" prefHeight="25.0" prefWidth="190.0" promptText="Enter Password" />
+      <TextField fx:id="usernameTxt" layoutX="300.0" layoutY="169.0" prefHeight="25.0" prefWidth="190.0" promptText="Enter Username" />
+      <Label fx:id="userLabel" alignment="CENTER_RIGHT" layoutX="123.0" layoutY="172.0" prefHeight="20.0" prefWidth="164.0" text="Username">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label fx:id="passLabel" alignment="CENTER_RIGHT" layoutX="123.0" layoutY="209.0" prefHeight="20.0" prefWidth="164.0" text="Password">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Button fx:id="exitBtn" layoutX="14.0" layoutY="361.0" mnemonicParsing="false" onAction="#exitProgram" text="Exit" />
+      <Label fx:id="loginPgLabel" layoutX="18.0" layoutY="14.0" text="Database Login">
+         <font>
+            <Font size="36.0" />
+         </font>
+      </Label>
+      <Label fx:id="zoneLabel" layoutX="32.0" layoutY="67.0" text="Timezone">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

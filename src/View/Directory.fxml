@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.DirectoryController">
+   <children>
+      <Label layoutX="14.0" layoutY="14.0" text="Directory">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+      <Label fx:id="welcomeTxt" alignment="CENTER_RIGHT" layoutX="447.0" layoutY="14.0" prefHeight="17.0" prefWidth="139.0" text="Welcome User" />
+      <Button fx:id="AppointmentsBtn" layoutX="14.0" layoutY="76.0" mnemonicParsing="false" onAction="#appointmentsBtn" text="Appointments" />
+      <Button fx:id="CustomersBtn" layoutX="14.0" layoutY="133.0" mnemonicParsing="false" onAction="#customersBtn" text="Customers" />
+      <Button layoutX="527.0" layoutY="361.0" mnemonicParsing="false" onAction="#logOutBtn" text="Log Out" />
+      <Button layoutX="14.0" layoutY="188.0" mnemonicParsing="false" onAction="#onActionReports" text="Reports" />
+   </children>
+</AnchorPane>

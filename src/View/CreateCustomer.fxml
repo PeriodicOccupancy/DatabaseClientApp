@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.CreateCustomerController">
+   <children>
+      <Label fx:id="titleTxt" layoutX="14.0" layoutY="14.0" text="Create Customer">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+      <HBox layoutX="14.0" layoutY="69.0" prefHeight="285.0" prefWidth="322.0" spacing="5.0">
+         <children>
+            <VBox prefHeight="305.0" prefWidth="129.0" spacing="8.0">
+               <children>
+                  <Label alignment="CENTER_RIGHT" prefHeight="25.0" prefWidth="135.0" text="Customer ID">
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                  </Label>
+                  <Label alignment="CENTER_RIGHT" layoutX="10.0" layoutY="10.0" prefHeight="25.0" prefWidth="135.0" text="Customer Name">
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                  </Label>
+                  <Label alignment="CENTER_RIGHT" layoutX="10.0" layoutY="35.0" prefHeight="25.0" prefWidth="135.0" text="Country">
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                  </Label>
+                  <Label alignment="CENTER_RIGHT" layoutX="10.0" layoutY="60.0" prefHeight="25.0" prefWidth="135.0" text="Division">
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                  </Label>
+                  <Label alignment="CENTER_RIGHT" layoutX="10.0" layoutY="85.0" prefHeight="25.0" prefWidth="135.0" text="Address">
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                  </Label>
+                  <Label alignment="CENTER_RIGHT" layoutX="10.0" layoutY="110.0" prefHeight="25.0" prefWidth="135.0" text="Postal Code">
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                  </Label>
+                  <Label alignment="CENTER_RIGHT" layoutX="10.0" layoutY="135.0" prefHeight="25.0" prefWidth="135.0" text="Phone #">
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                  </Label>
+               </children>
+            </VBox>
+            <VBox prefHeight="298.0" prefWidth="180.0" spacing="8.0">
+               <children>
+                  <TextField fx:id="idTxt" editable="false" promptText="Auto-Generated" />
+                  <TextField fx:id="nameTxt" layoutX="10.0" layoutY="10.0" promptText="Customer's Full Name" />
+                  <ComboBox fx:id="countrySelection" onAction="#onActionCountrySelected" prefWidth="150.0" promptText="Select Country" />
+                  <ComboBox fx:id="divisionSelection" prefWidth="150.0" promptText="Select Country FIrst" />
+                  <TextField fx:id="addressTxt" promptText="Enter Address" />
+                  <TextField fx:id="postalCodeTxt" layoutX="10.0" layoutY="110.0" promptText="Enter postal code" />
+                  <TextField fx:id="phoneTxt" layoutX="10.0" layoutY="135.0" promptText="Enter phone number" />
+               </children>
+            </VBox>
+         </children>
+      </HBox>
+      <Button fx:id="cancelBtn" layoutX="534.0" layoutY="361.0" mnemonicParsing="false" onAction="#onActionCancel" text="Cancel" />
+      <Button fx:id="createBtn" layoutX="453.0" layoutY="361.0" mnemonicParsing="false" onAction="#onActionSave" text="Create" />
+   </children>
+</AnchorPane>

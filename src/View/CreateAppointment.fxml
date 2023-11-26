@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.CreateAppointmentController">
+   <children>
+      <Label fx:id="createAptTitle" layoutX="14.0" layoutY="14.0" text="Create Appointment">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+      <Button fx:id="cancelAptCreation" layoutX="534.0" layoutY="361.0" mnemonicParsing="false" onAction="#cancelAptCreationBtn" text="Cancel" />
+      <Button fx:id="saveAppointment" layoutX="474.0" layoutY="361.0" mnemonicParsing="false" onAction="#saveAppointmentBtn" text="Save" />
+      <HBox layoutX="14.0" layoutY="60.0" prefHeight="284.0" prefWidth="297.0" spacing="15.0">
+         <children>
+            <VBox prefHeight="336.0" prefWidth="118.0" spacing="5.0">
+               <children>
+                  <Label alignment="CENTER_RIGHT" prefHeight="25.0" prefWidth="155.0" text="Appointment ID">
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                  </Label>
+                  <Label alignment="CENTER_RIGHT" layoutX="10.0" layoutY="10.0" prefHeight="25.0" prefWidth="163.0" text="Title">
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                  </Label>
+                  <Label alignment="CENTER_RIGHT" layoutX="10.0" layoutY="35.0" prefHeight="25.0" prefWidth="163.0" text="Description">
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                  </Label>
+                  <Label alignment="CENTER_RIGHT" layoutX="10.0" layoutY="60.0" prefHeight="25.0" prefWidth="163.0" text="Location">
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                  </Label>
+                  <Label alignment="CENTER_RIGHT" layoutX="10.0" layoutY="85.0" prefHeight="25.0" prefWidth="163.0" text="Contact">
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                  </Label>
+                  <Label alignment="CENTER_RIGHT" layoutX="10.0" layoutY="110.0" prefHeight="25.0" prefWidth="150.0" text="Type">
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                  </Label>
+                  <Label alignment="CENTER_RIGHT" layoutX="10.0" layoutY="135.0" prefHeight="25.0" prefWidth="163.0" text="Start Time">
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                  </Label>
+                  <Label alignment="CENTER_RIGHT" layoutX="10.0" layoutY="160.0" prefHeight="25.0" prefWidth="163.0" text="End Time">
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                  </Label>
+                  <Label alignment="CENTER_RIGHT" layoutX="10.0" layoutY="185.0" prefHeight="25.0" prefWidth="163.0" text="Customer ID">
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                  </Label>
+                  <Label alignment="CENTER_RIGHT" layoutX="10.0" layoutY="210.0" prefHeight="25.0" prefWidth="163.0" text="User ID">
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                  </Label>
+               </children>
+            </VBox>
+            <VBox prefHeight="336.0" prefWidth="165.0" spacing="5.0">
+               <children>
+                  <TextField fx:id="idTxt" editable="false" promptText="Auto-Generated" />
+                  <TextField fx:id="titleTxt" layoutX="10.0" layoutY="10.0" promptText="Enter Title" />
+                  <TextField fx:id="descriptionTxt" layoutX="10.0" layoutY="35.0" promptText="Enter short description" />
+                  <TextField fx:id="locationTxt" layoutX="10.0" layoutY="60.0" promptText="Enter location" />
+                  <ComboBox fx:id="contactSelection" prefHeight="25.0" prefWidth="169.0" promptText="Select Contact" />
+                  <TextField fx:id="typeTxt" layoutX="10.0" layoutY="130.0" promptText="Enter Appointment type" />
+                  <DatePicker fx:id="startDatePicker" promptText="Select start date" />
+                  <DatePicker fx:id="endDatePicker" promptText="Select end date" />
+                  <TextField fx:id="customerIDTxt" layoutX="10.0" layoutY="130.0" promptText="Enter Customer ID" />
+                  <TextField fx:id="userIDTxt" layoutX="10.0" layoutY="190.0" promptText="Associated User ID" />
+               </children>
+            </VBox>
+         </children>
+      </HBox>
+      <VBox layoutX="317.0" layoutY="240.0" prefHeight="115.0" prefWidth="178.0" spacing="5.0">
+         <children>
+            <TextField fx:id="startTimeTxt" prefHeight="25.0" prefWidth="165.0" promptText="Enter start time" />
+            <TextField fx:id="endTimeTxt" prefHeight="25.0" prefWidth="165.0" promptText="Enter end time" />
+            <ComboBox fx:id="customerSelection" onAction="#onActionCustomerSelection" prefHeight="25.0" prefWidth="177.0" promptText="Select Customer to fill ID" />
+            <ComboBox fx:id="userSelection" onAction="#onActionUserSelection" prefHeight="25.0" prefWidth="177.0" promptText="Select User to fill ID" />
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>
