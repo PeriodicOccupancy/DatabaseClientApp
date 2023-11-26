@@ -1,7 +1,12 @@
 #Title:      Customer Appointment Database Management Client
 
 Class project written mostly in Java and JavaFX, and some MySQL, meant to be used alongside a SQL database which is not included here.
+Project is here purely for showcasing/archive purposes and to be used in my portfolio, as it will not run without the aforementioned SQL database
 
+
+
+
+******************
 Purpose:    To provide an easy and intuitive way to view, add, update, or delete Customer and Appointment Records from
 the database. As well as provide some basic reporting information, including a record of logins into the application
 provided in a txt file, and a dynamic record of Appointments sorted by any combination of type or month. Lastly, a record of
