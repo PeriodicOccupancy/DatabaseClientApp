@@ -1,4 +1,4 @@
-#Title:      Customer Appointment Database Management Client
+# Title:      Customer Appointment Database Management Client
 
 Class project written mostly in Java and JavaFX, and some MySQL, meant to be used alongside a SQL database which is not included here.
 Project is here purely for showcasing/archive purposes and to be used in my portfolio, as it will not run without the aforementioned SQL database
