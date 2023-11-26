@@ -1,3 +1,4 @@
 # Project exclude paths
 *.html linguist-vendored
+JavaDoc/* linguist-vendored
 /out/
